@@ -13,7 +13,9 @@ const render = async () => {
     link.innerHTML = `<ul>${html}</ul>`; 
 };
 
-await render();
+(async () => {
+    await render();
+})();
 
 const handleSubmit = async (event) => {
     const formData = new FormData();
